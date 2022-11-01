@@ -1,7 +1,5 @@
 ﻿using System.Reflection;
-
 using AutoMapper.Extensions.ExpressionMapping;
-
 using Iot.Class.Data;
 using Iot.Core.Data.Relational.Repositories.Implements;
 using Iot.Core.Data.Relational.Repositories.Interfaces;

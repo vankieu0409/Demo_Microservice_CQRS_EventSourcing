@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iot.Class.Data", "Iot.Class
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iot.Class.Domain", "Iot.Class.Domain\Iot.Class.Domain.csproj", "{B0DB6C7D-0D2E-4D90-B270-90C472007122}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iot.Class.Infrastructure", "Iot.Class.Infrastructure\Iot.Class.Infrastructure.csproj", "{B2462756-979F-4D9B-8D85-EA88C498323C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iot.Class.Infrastructure", "Iot.Class.Infrastructure\Iot.Class.Infrastructure.csproj", "{B2462756-979F-4D9B-8D85-EA88C498323C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

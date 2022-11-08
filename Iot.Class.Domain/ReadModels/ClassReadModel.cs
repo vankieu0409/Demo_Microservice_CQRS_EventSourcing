@@ -1,10 +1,11 @@
 ﻿using System;
 using Iot.Core.Domain.Entities;
 using Iot.Core.Domain.Entities.Interfaces;
+using Iot.Core.Domain.Implements;
 
 namespace Iot.Class.Domain.ReadModels;
 
-public class ClassReadModel : Entity<Guid>
+public class ClassReadModel : FullAuditedEntity<Guid>
 {
     public string ClassName { get; set; }
     public string Teacher { get; set; }

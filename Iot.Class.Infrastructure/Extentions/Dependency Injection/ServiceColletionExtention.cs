@@ -30,7 +30,7 @@ public static class ServiceColletionExtention
                 configuration.AddExpressionMapping();
             }, executingAssembly, entryAssembly);
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("Default")));
+                options.UseNpgsql(configuration.GetConnectionString("Default")));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddEventStore(configuration.GetSection("EventStore").Get<EventStoreConfiguration>());
             services.AddEventBus(configuration.GetSection("EventBus").Get<EventBusConfiguration>());

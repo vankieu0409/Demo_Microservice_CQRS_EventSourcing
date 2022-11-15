@@ -30,7 +30,6 @@ namespace Iot.Class.Api.Controllers
 
         [HttpGet("{key}")]
         [EnableQuery]
-
         public async Task<ClassDto> GetAsync([FromODataUri] Guid key)
         {
             if (key.IsNullOrDefault()) // kiểm tra Key Chuyền vào. nếu Null thì thông đưa ra thông báo.

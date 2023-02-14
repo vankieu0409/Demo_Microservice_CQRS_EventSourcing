@@ -1,4 +1,4 @@
-using Iot.Class.Infrastructure.Extention.Dependency_Injection;
+using Iot.Class.Infrastructure.Extentions.Dependency_Injection;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Iot.Core" Version="6.0.9" />
-    <PackageReference Include="Iot.Core.Domain" Version="6.0.7" />
+    <PackageReference Include="Iot.Core" Version="7.0.0" />
+    <PackageReference Include="Iot.Core.Domain" Version="7.0.1" />
   </ItemGroup>
 
 </Project>

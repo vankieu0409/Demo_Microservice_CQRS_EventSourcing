@@ -1,9 +1,6 @@
 ﻿using Iot.Class.Data.Reponsitoris.Interface;
 using Iot.Class.Domain.ReadModels;
 using Iot.Core.Data.Relational.Repositories.Implements;
-using Iot.Core.Data.Relational.Repositories.Interfaces;
-using Iot.Core.MultiTenancy.Abstraction.Providers.Interfaces;
-using Microsoft.EntityFrameworkCore;
 
 namespace Iot.Class.Data.Reponsitoris.Implemets;
 

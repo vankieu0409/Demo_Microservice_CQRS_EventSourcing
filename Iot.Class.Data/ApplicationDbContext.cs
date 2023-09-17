@@ -12,10 +12,19 @@ public class ApplicationDbContext : DbContext
     }
 
     public virtual DbSet<ClassReadModel> Classes { get; set; }
-    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    //{
-    //    base.OnConfiguring(optionsBuilder);
-    //    optionsBuilder.LogTo(Console.WriteLine);
-    //}
-    // static ApplicationDbContext() => NpgsqlConnection.GlobalTypeMapper.MapEnum<RelationshipTypeEnum.RelationshipType>().MapEnum<StatusEnum.StatusType>();
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        base.OnConfiguring(optionsBuilder);
+        optionsBuilder.LogTo(Console.WriteLine);
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        modelBuilder.Entity<ClassReadModel>(entity =>
+        {
+            entity.HasKey(c => c.Id);
+            entity.ToTable("Class");
+        });
+    }
 }

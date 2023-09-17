@@ -1,11 +1,14 @@
 ﻿using AutoMapper;
+
 using Iot.Class.Api.ViewModels;
 using Iot.Class.Domain.Dtos;
 using Iot.Class.Infrastructure.Commands.Classes;
 using Iot.Class.Infrastructure.Queries;
 using Iot.Core.AspNetCore.Exceptions;
 using Iot.Core.Extensions;
+
 using MediatR;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

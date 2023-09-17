@@ -5,5 +5,4 @@ namespace Iot.Class.Data.Reponsitoris.Interface;
 
 public interface IClassRepository : IRepository<ClassReadModel>
 {
-
 }

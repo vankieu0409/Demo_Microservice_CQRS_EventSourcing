@@ -1,7 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Iot.Class.Domain.ReadModels;
-using Npgsql;
 namespace Iot.Class.Data;
 
 public class ApplicationDbContext : DbContext

@@ -30,7 +30,7 @@ public static class ServiceCollectionExtention
                 configuration.AddExpressionMapping();
             }, executingAssembly, entryAssembly);
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseNpgsql(configuration.GetConnectionString("Default")));
+                options.UseSqlServer(configuration.GetConnectionString("Default")));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddEventStore(configuration.GetSection("EventStore").Get<EventStoreConfiguration>());
            // services.AddEventStoreClient("esdb://admin:VEX2L6HNvWndrvVj@96.9.211.102:2113?tls=true&TlsVerifyCert=false");

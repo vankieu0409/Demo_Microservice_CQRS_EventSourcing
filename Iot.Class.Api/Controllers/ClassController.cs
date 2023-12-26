@@ -6,12 +6,9 @@ using Iot.Class.Infrastructure.Queries;
 using Iot.Core.AspNetCore.Exceptions;
 using Iot.Core.Extensions;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Formatter;
 using Microsoft.AspNetCore.OData.Query;
-using Microsoft.AspNetCore.OData.Results;
 
 namespace Iot.Class.Api.Controllers
 {

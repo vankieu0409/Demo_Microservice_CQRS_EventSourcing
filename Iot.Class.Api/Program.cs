@@ -1,9 +1,5 @@
 using Iot.Class.Infrastructure.Extentions.Dependency_Injection;
 
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
